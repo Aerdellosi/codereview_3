@@ -1,9 +1,9 @@
 //BUSINESS LOGIC
 
-const userInput = "78";
-convertKeyElementstoPhrases(userInput);
+// const userInput = "78";
+// convertKeyElementstoPhrases(userInput);
 
-function convertKeyElementstoPhrases(userInput) {
+function convertKeyElementsToPhrases(userInput) {
     const increment = parseInt(userInput);
     const array = [];
     for (let i = 0; i < increment; i++) {
@@ -20,10 +20,46 @@ function convertKeyElementstoPhrases(userInput) {
         }
     }
 
-    console.log(array);
+    return array;
 }
 
 
 //UI LOGIC
 
 
+window.onload = function() {
+
+    let stringInput = document.getElementById("numberInput");
+
+    stringInput.addEventListener("submit", function(e) {
+        e.preventDefault();
+        let resettableDiv = document.createElement("div");
+        resettableDiv.classList.add("reset");
+        console.log(resettableDiv);
+        document.querySelector(".innerDiv").append(resettableDiv);
+        let userInput = document.getElementById("integerInput").value;
+        let arrayUI = convertKeyElementsToPhrases(userInput);
+        arrayUI.forEach(function(element) {
+            let p = document.createElement("p");
+            p.innerText = element;
+            document.querySelector(".reset").append(p);
+
+        });
+        let resetButton = document.querySelector(".hidden");
+        resetButton.classList.remove("hidden");
+    }
+    );
+
+    stringInput.addEventListener("click", function() {
+        document.querySelector(".reset").remove();
+        let resetButton = document.getElementById("hidden");
+        console.log(resetButton);
+        resetButton.classList.add("hidden");
+
+    });
+
+
+
+
+
+}
