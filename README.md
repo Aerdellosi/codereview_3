@@ -1,3 +1,58 @@
+
+# Mr. Roger's message from the whirlpool under the mount
+
+This program will take in a positive integer input from the user and output a list of values between 0 and the user's input which certain values replaced; if a value contains a '3', it will be replaced with "Won't you be my neighbor?", if the value contains a '2', it will be replaced with "Boop!", and if the value contains a '1', it will replaced with "Beep!". These will be displayed to the user below the input form.
+
+## Authors
+
+Aerdellosi
+
+## Languages Used
+
+* HTML
+* CSS
+* Javascript
+
+
+## Github 
+
+<https://github.com/Aerdellosi/codereview_3.git>
+
+## Setup Instructions
+
+1. Download vscode
+2. Clone or fork/clone to your github/local directory
+3. Install vscode extension Live Server through the vscode extensions portal
+4. Launch with Live Server to a local port in your browser
+
+## Known Bugs
+1/20/2022  
+If the user submits an input that is long enough, the output that clips below the initial viewport will escape its containing div.
+
+## Licenses
+
+Copyright: Aerdellosi, Cloud in Head Studios  
+Date: 1/14/2022  
+License: Unlicensed. Have fun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 TDD::::
 
 Describe: numberToConditionalArray()
