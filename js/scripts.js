@@ -1,7 +1,7 @@
 //BUSINESS LOGIC
 
 // const userInput = "78";
-// convertKeyElementstoPhrases(userInput);
+// console.log(convertKeyElementsToPhrases(userInput));
 
 function convertKeyElementsToPhrases(userInput) {
     const increment = parseInt(userInput);
@@ -50,10 +50,9 @@ window.onload = function() {
     }
     );
 
-    stringInput.addEventListener("click", function() {
+    stringInput.addEventListener("reset", function() {
         document.querySelector(".reset").remove();
-        let resetButton = document.getElementById("hidden");
-        console.log(resetButton);
+        let resetButton = document.querySelector(".resetButton");
         resetButton.classList.add("hidden");
 
     });
